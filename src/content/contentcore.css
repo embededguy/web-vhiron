@@ -1,0 +1,28 @@
+.row{
+	display: flex;
+
+}
+.homecorenew{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 80px;
+}
+.newloop{
+}
+.newloop img{
+	width: 250px;
+}
+.wrapper{
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 20px;
+
+}
+.wrapper h2{
+	font-size: 45px;
+}
+.wrapper p{
+	font-size: 35px;
+	font-weight: 100;
+}

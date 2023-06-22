@@ -9,6 +9,8 @@ import Splash from './components/splash'
 
 // Content
 import Carousel from './content/carousel'
+import ContentCore from './content/contentcore'
+import ContentServices from './content/contentservices'
 
 function App() {
     const [val, setVal] = useState(true);
@@ -25,7 +27,8 @@ function App() {
             <div className="App">
                 <NavBar/>
                 <Carousel/>
-
+                <ContentCore/>
+                <ContentServices/>
                 <Footer/>
             </div>
         );  
