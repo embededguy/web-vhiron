@@ -1,0 +1,101 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 0px;
+    padding-left: 0px;
+    background: #D3E0EA;
+    color: black;
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0px;
+    font-weight: 800;
+    z-index: 11;
+}
+.navbar-left{
+    display: flex;
+    font-weight: 900;
+    gap: 20px;
+}
+.navbar-right{
+    display: flex;
+    font-weight: 900;
+    margin-left: 60px;
+    user-select: none;
+    gap: 50px;
+    margin-right: 30px;
+}
+.navbar-left-content{
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+.navbar-right-content{
+/*    margin-right: 30px;*/
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0;
+}
+.navbar-right-content p{
+	margin: 0 0;
+	margin-top: 8px;
+	color: #003f69;
+/*	text-shadow: 0px 0px 10px cyan;*/
+}
+.navbar-right-content hr{
+	margin-top: 16px;
+	margin-bottom: 0px;
+    transition: width 0.5s;
+    width: 0px;
+    border: 2px solid #D3E0EA;
+    border-radius: 10px;
+}
+.navbar-right-content:hover hr{
+    border: 2px solid #003f69;
+	width: 100%;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 80px;
+    background-color: #F6F5F5;
+    box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.4);
+    z-index: 1;
+    border-radius: 5px;
+    width: 60%;
+    left: 20%;
+    text-align: center;
+    padding: none;
+    height: 500px;
+    overflow-y: scroll;
+    scrollbar-width: none;  /* Firefox */
+}
+
+.navbar-right-content:hover .dropdown-content {
+    border-bottom: 2px solid cyan;
+    display: block;
+}
+.dropdown-content p:nth-child(odd) {
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.dropdown-content p:nth-child(even){
+    background: #D3E0EA;
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.dropdown-content p:hover{
+    background: #454580;
+}
