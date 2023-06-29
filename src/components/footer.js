@@ -17,6 +17,10 @@ function Footer(){
   				</div>
 
   				<div className="footer-right">
+  					<p>AAA</p>
+  					<p>AAA</p>
+  					<p>AAA</p>
+  					<p>AAA</p>
 
   				</div>
   			</div>

@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import { BrowserRouter,Routes, Route, Outlet, Link } from "react-router-dom";
 
 import './app.css';
 
@@ -12,6 +13,8 @@ import Carousel from './content/carousel'
 import ContentCore from './content/contentcore'
 import ContentServices from './content/contentservices'
 
+import About from './content/about'
+
 function App() {
     const [val, setVal] = useState(true);
     setTimeout(()=>{setVal(false)},2000)
@@ -24,15 +27,30 @@ function App() {
     }
     else{
         return (
-            <div className="App">
-                <NavBar/>
+            <BrowserRouter basename="/">
+              <Routes>
+                <Route path="/" element={<NavBar/>} >
+                    <Route index element={<Home />} />
+                    <Route path="about" element={<About />} />
+
+                    {/* ALL ROUTES HERE */}
+                </Route>
+              </Routes>
+            </BrowserRouter>
+
+        );  
+    }
+}
+
+function Home(){
+    return(
+            <>
                 <Carousel/>
                 <ContentCore/>
                 <ContentServices/>
                 <Footer/>
-            </div>
-        );  
-    }
+            </>
+        )
 }
 
 export default App;

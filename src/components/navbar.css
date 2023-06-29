@@ -44,10 +44,11 @@
     flex-direction: column;
     margin: 0 0;
 }
-.navbar-right-content p{
+.navbar-right-content a{
 	margin: 0 0;
 	margin-top: 8px;
 	color: #003f69;
+    text-decoration: none;
 /*	text-shadow: 0px 0px 10px cyan;*/
 }
 .navbar-right-content hr{
@@ -67,9 +68,9 @@
     position: absolute;
     top: 80px;
     background-color: #Fff;
-    box-shadow: 0px 8px 10px 0px #eee;
+    box-shadow: 0px 8px 10px 0px #444;
     z-index: 1;
-    border-radius: 10px;
+    border-radius: 0px;
     width: 800px;
     text-align: center;
     padding: none;
@@ -79,7 +80,7 @@
 }
 
 .navbar-right-content:hover .dropdown-content {
-    border-bottom: 2px solid cyan;
+    border-bottom: 4px solid lightseagreen;
     display: block;
 }
 .dropdown-content p:nth-child(odd) {
@@ -95,4 +96,86 @@
 }
 .dropdown-content p:hover{
     background: #454580;
+}
+.hamburger{
+    display: none;
+    visibility: hidden;
+}
+@media(orientation:portrait){
+    body{
+    }
+
+    .navbar-right{
+        display: none;
+        font-weight: 900;
+        margin-left: 60px;
+        user-select: none;
+        gap: 50px;
+        margin-right: 30px;
+    }
+    .navbar-left-content{
+        position: relative;
+        display: inline-block;
+        margin-left: 10px;
+        cursor: pointer;
+        user-select: none;
+    }
+    #hambure #ham-1{
+        transition: width 1s;
+        transition: transform 1s;
+        top: 10px;
+    }
+    #hambure #ham-2{
+        transition: width 1s;
+        transition: transform 1s;
+        top:20px
+    }
+    #hambure #ham-3{
+        transition: width 1s;
+        transition: transform 1s;
+        top: 10px;
+        transition: width 1s;
+        transition: transform 1s;
+        top: 30px;
+    }
+    #hamburx #ham-1{
+        transition: width 1s;
+        transition: transform 1s;
+        top: 20px;
+        transform: rotateZ(-45deg);
+    }
+    #hamburx #ham-2{
+        transition: width 1s;
+        transition: transform 1s;
+        top: 20px;
+        transform: scaleX(0);
+    }
+    #hamburx #ham-3{
+        transition: width 1s;
+        transition: transform 1s;
+        top: 20px;
+        transform: rotateZ(45deg);
+    }
+    .hamburger{
+        top: 20px;
+        z-index: 4;
+        position: fixed;
+        display: block;
+        visibility: visible;
+        height: 30px;
+        width: 30px;
+        border-radius: 2px;
+        background-color: transparent;
+        right: 15px;
+        z-index: 100;
+    }
+    .hamburger div{
+        transition: width 0.3s;
+        transition: transform 0.2s;         
+        position: absolute;
+        height: 5px;
+        width: 30px;
+        border-radius: 2px;
+        background-color: #000;
+    }
 }
