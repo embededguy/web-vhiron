@@ -1,0 +1,16 @@
+.about-outer{
+    background-color: #e6ecf1;
+    height: 100vh;
+    width: 100vw;
+    margin-top:88px;
+}
+.about-us-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.about-us-container h1{
+
+}

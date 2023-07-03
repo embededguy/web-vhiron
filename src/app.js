@@ -17,7 +17,7 @@ import About from './content/about'
 
 function App() {
     const [val, setVal] = useState(true);
-    setTimeout(()=>{setVal(false)},2000)
+    setTimeout(()=>{setVal(false)},0)
     if (val){
         return (
             <div className="App">
@@ -37,7 +37,6 @@ function App() {
                 </Route>
               </Routes>
             </BrowserRouter>
-
         );  
     }
 }

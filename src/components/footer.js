@@ -6,7 +6,6 @@ function Footer(){
 			<div className="footer-container">
 				<div className="footer-header">
 					<div className="foot-row">
-						
 						<div className="">
 							<div className="single-cta">
 								<i className="fa fa-bolt"/>
@@ -16,7 +15,6 @@ function Footer(){
 								</div>
 							</div>
 						</div>
-
 						<div className="">
 							<div className="single-cta">
 								<i className="fa fa-phone" />
@@ -38,7 +36,7 @@ function Footer(){
 						</div>
 					</div>
 				</div>
-				<hr style={{border:"2px solid #ffffff",borderRadius:"5px",width:"50%"}}/>
+				<hr style={{border:"2px solid #ffffff",borderRadius:"5px",width:"100%"}}/>
 				<div className="footer-content">
 					<div className="row-footer">
 						<div className="" style={{}}>
@@ -50,8 +48,6 @@ function Footer(){
 								</div>
 								</div>
 								<div className="footer-text">
-									<p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-									elit,Lorem ipsum dolor sit amet.</p>
 								</div>
 								<div className="footer-social-icon">
 									<span>Follow us</span>

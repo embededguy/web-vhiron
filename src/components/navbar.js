@@ -1,15 +1,23 @@
-import React from 'react';
+import { useState,useEffect}  from 'react';
 import './navbar.css';
 import { BrowserRouter,Routes, Route, Outlet, Link } from "react-router-dom";
-
+import RubberBand from 'react-reveal/RubberBand';
 
 function NavBar(){
+	let [sleep,setSleep] = useState(false);
+	useEffect(() => {
+		setTimeout(() => {
+		  setSleep(true);
+		}, 2000);
+	  });
 	return(
 		<>
 		<div className="navbar">
 			<div className="navbar-left">
 				<div className="navbar-left-content">
+				<RubberBand spy={sleep}>
 	            	<img src="/images/vhiron_logo.png" style={{width:"140px"}}/>
+					</RubberBand>
 	            </div>
 	        </div>
             <div className="navbar-right">

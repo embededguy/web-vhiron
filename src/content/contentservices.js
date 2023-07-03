@@ -6,7 +6,7 @@ function ContentServices(){
 	return(
 		<div className="wrapper">
 			<Jello>
-		  	<h2 className="headings txt-al-c txt-w-n">Our Services</h2>
+		  		<h2 className="headings txt-al-c txt-w-n">Our Services</h2>
 			</Jello>
 		  	<div className="services_part">
 			  	<Fade left>
