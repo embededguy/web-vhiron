@@ -12,6 +12,7 @@ import Splash from './components/splash'
 import Carousel from './content/carousel'
 import ContentCore from './content/contentcore'
 import ContentServices from './content/contentservices'
+import ContentZoom from './content/contentzoom'
 
 import About from './content/about'
 
@@ -47,6 +48,7 @@ function Home(){
                 <Carousel/>
                 <ContentCore/>
                 <ContentServices/>
+                <ContentZoom/>
                 <Footer/>
             </>
         )

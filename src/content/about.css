@@ -1,16 +1,108 @@
 .about-outer{
+
     background-color: #e6ecf1;
-    height: 100vh;
     width: 100vw;
     margin-top:88px;
 }
 .about-us-container{
+    background-color: #e6ecf1;
+
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    
+    margin-top: 50px;
+    padding-top: 50px;
 }
 .about-us-container h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #235626;
+}
+.about-outer-c{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.center-line{
+    position: absolute;
+    top:120vh;
+    width: 10px;
+    border-radius: 5px;
+    background: #cbd6e2;
+    height: 1300px;
+    margin-left: calc(50vw - 5px);
+}
+.timeline-inner{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:0;
+}
+.timeline-main{
+    display: flex;
+    align-items: center;
+}
+.timeline-hex:nth-child(n+1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    width: 250px;
+    height: 250px;
+    margin-right: 210px;
+}
+.timeline-hex:nth-child(n){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    width: 250px;
+    height: 250px;
+    margin-left: 210px;
+}
 
+.timeline-c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    
+}
+.timeline-txt:nth-child(n){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 35px;
+    box-shadow: 0 0 40px rgb(0 0 0 / 15%);
+    width: 350px;
+    padding: 25px;
+    margin-left: 250px;
+}
+.timeline-txt:nth-child(n+1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 35px;    
+    box-shadow: 0 0 40px rgb(0 0 0 / 15%);
+    width: 350px;
+    padding: 25px;
+    margin-right: 250px;
+}
+
+.timeline-txt-o{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.timeline-hex-o{
+    flex: 0 0 50%;
+    max-width: 50%;
 }
