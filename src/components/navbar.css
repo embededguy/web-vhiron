@@ -190,5 +190,42 @@
         left: -100vw;
         background-color:#D3E0EA; 
     }
-
+    .flap-container{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .flap-container-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 0;
+    }
+    .flap-container-p:nth-child(odd){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #D3E0EA;
+        height: 80px;
+        width: 100vw;
+    }
+    .flap-container-p:nth-child(even){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0895d6;
+        height: 80px;
+        text-align: center;
+        width: 100vw;
+    }
+    .flap-container-inner p:nth-child(odd) {
+        text-align: center;
+        margin: 0;
+    }
+    .flap-container-inner p:nth-child(even) {
+        text-align: center;
+        margin: 0;
+    }
 }

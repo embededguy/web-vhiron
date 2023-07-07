@@ -51,7 +51,19 @@ function NavBar(){
 
 		    </div>
 			<div className='flap'>
+				<div className='flap-container'>
+					<div className='flap-container-inner'>
+						<div className='flap-container-p'>
+							<p>Home</p>
+						</div>
+						<div className='flap-container-p'>
+							<p>About Us</p>
+						</div>
+					</div>
+					<div>
 
+					</div>
+				</div>
 			</div>
             <div id="hambure" className="hamburger" onClick={
                 function(arg){

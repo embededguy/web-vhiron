@@ -1,0 +1,40 @@
+.panel-out{
+    position: relative;
+    margin: auto;
+    inset: 0px auto auto 0px;
+    box-sizing: border-box;
+    width: 100%;
+    background: rgb(246, 247, 249);
+  
+}
+.panel{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    background: transparent;
+    border: none !important;
+    box-shadow: none !important;
+}
+.panel img{
+    width:120vw;
+}
+.panel-1{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    z-index: 4;
+
+}
+.panel-2{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    position: relative;
+    z-index: 3;
+    top: 0;
+}
