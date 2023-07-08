@@ -2,6 +2,7 @@ import './contentservices.css';
 import Fade from 'react-reveal/Fade';
 import Jump from 'react-reveal/Jump';
 import Jello from 'react-reveal/Jello';
+
 function ContentServices(){
 	return(
 		<div className="wrapper">

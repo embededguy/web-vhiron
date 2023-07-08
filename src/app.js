@@ -15,10 +15,11 @@ import ContentServices from './content/contentservices'
 import ContentZoom from './content/contentzoom'
 
 import About from './content/about'
+import Contact from './content/contact'
 
 function App() {
     const [val, setVal] = useState(true);
-    setTimeout(()=>{setVal(false)},0)
+    setTimeout(()=>{setVal(false)},3000)
     if (val){
         return (
             <div className="App">
@@ -33,6 +34,7 @@ function App() {
                 <Route path="/" element={<NavBar/>} >
                     <Route index element={<Home />} />
                     <Route path="about" element={<About />} />
+                    <Route path="contact" element={<Contact />} />
 
                     {/* ALL ROUTES HERE */}
                 </Route>
@@ -43,6 +45,7 @@ function App() {
 }
 
 function Home(){
+    window.scrollTo(0,0)
     return(
             <>
                 <Carousel/>

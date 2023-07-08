@@ -13,9 +13,9 @@ import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
 
 function About(){
+	window.scrollTo(0,0)
 	return(
 		<>
-
 			<section className='about-outer'>
 				<div className='about-us-container' style={{background:`url(${background})`,backgroundPosition:"center",width:"100vw"}}>
 					<h1>About Us</h1>
@@ -28,7 +28,6 @@ function About(){
 						</div>
 						<div>
 							<p className='about-txt' style={{fontSize:"25px"}}>lorem culpa amet fugiat.
-							lorem culpa amet fugiat.lorem culpa amet fugiat.lorem culpa amet fugiat.lorem culpa amet fugiat.lorem culpa amet fugiat.
 							lorem culpa amet fugiat.lorem culpa amet fugiat.lorem culpa amet fugiat.lorem culpa amet fugiat.lorem culpa amet fugiat.
 							</p>
 						</div>

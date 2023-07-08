@@ -203,7 +203,7 @@
         flex-direction: column;
         gap: 0;
     }
-    .flap-container-p:nth-child(odd){
+    .flap-container-p:nth-child(even){
         display: flex;
         justify-content: center;
         align-items: center;
@@ -211,21 +211,32 @@
         height: 80px;
         width: 100vw;
     }
-    .flap-container-p:nth-child(even){
+    .flap-container-p:nth-child(odd){
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #0895d6;
+        background-color: #0CAFFF;
+        
         height: 80px;
         text-align: center;
         width: 100vw;
     }
-    .flap-container-inner p:nth-child(odd) {
+    .flap-container-inner a:nth-child(odd) {
         text-align: center;
+        color: black;
         margin: 0;
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        user-select: none;
     }
-    .flap-container-inner p:nth-child(even) {
+    .flap-container-inner a:nth-child(even) {
         text-align: center;
+        user-select: none;
+        color: black;
+        font-size: 20px;
         margin: 0;
+        text-decoration: none;
+        font-weight: 500;
     }
 }

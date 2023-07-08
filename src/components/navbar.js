@@ -45,7 +45,7 @@ function NavBar(){
 	            	<hr/>
 	            </div>
 	            <div className="navbar-right-content">
-	            	<Link to="/">Contact Us</Link>
+	            	<Link to="/contact">Contact Us</Link>
 	            	<hr/>	            	
 	            </div>
 
@@ -54,10 +54,40 @@ function NavBar(){
 				<div className='flap-container'>
 					<div className='flap-container-inner'>
 						<div className='flap-container-p'>
-							<p>Home</p>
+							<Link to="/" onClick={()=>{
+								document.getElementById("hamburx").id="hambure";
+								document.getElementsByClassName('flap')[0].style.left="-100vw"
+						}}>Home</Link>
 						</div>
 						<div className='flap-container-p'>
-							<p>About Us</p>
+							<Link to="/about" onClick={()=>{
+								document.getElementById("hamburx").id="hambure";
+								document.getElementsByClassName('flap')[0].style.left="-100vw"
+						}}>About Us</Link>
+						</div>
+						<div className='flap-container-p'>
+							<Link to="/about" onClick={()=>{
+								document.getElementById("hamburx").id="hambure";
+								document.getElementsByClassName('flap')[0].style.left="-100vw"
+						}}>Services</Link>
+						</div>
+						<div className='flap-container-p'>
+							<Link to="/about" onClick={()=>{
+								document.getElementById("hamburx").id="hambure";
+								document.getElementsByClassName('flap')[0].style.left="-100vw"
+						}}>Portfolio</Link>
+						</div>
+						<div className='flap-container-p'>
+							<Link to="/about" onClick={()=>{
+								document.getElementById("hamburx").id="hambure";
+								document.getElementsByClassName('flap')[0].style.left="-100vw"
+						}}>Careers</Link>
+						</div>
+						<div className='flap-container-p'>
+							<Link to="/contact" onClick={()=>{
+								document.getElementById("hamburx").id="hambure";
+								document.getElementsByClassName('flap')[0].style.left="-100vw"
+						}}>Contact Us</Link>
 						</div>
 					</div>
 					<div>
