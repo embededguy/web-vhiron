@@ -1,0 +1,203 @@
+.top-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-top: 88px;
+    height: 60vh;
+    color: brown;
+    background: hsl(250.85deg 42.73% 43.14%);
+    background-attachment: fixed;
+    background-image: url(https://img.freepik.com/premium-vector/web-development-coding-programming-languages-css-html-js-program-code-screen-laptop_530733-2538.jpg?w=826);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left-ibar{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    gap: 20px;
+    padding: 10px;
+}
+
+.left-ibar button{
+    border: none;
+    background-color: transparent;
+}
+
+.details-container{
+   position: relative;
+   z-index: 0;
+}
+
+.details{
+    text-align: center;
+    height: 70vh;
+}
+
+.details h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.details-txt{
+    text-align: left;
+    margin-left: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.details-txt.active{
+    z-index: 1;
+    opacity: 1;
+}
+
+.show{
+    display: block;
+}
+
+/* #frontend{
+    z-index: 1;
+}
+
+#backend{
+    z-index: 2;
+}
+
+#webdsgn{
+    z-index: 3;
+}
+
+#ui{
+    z-index: 4;
+} */
+.details-txt:nth-child(2){
+    top: 25%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.details-txt:nth-child(2).active{
+    opacity: 1;
+}
+
+.details-txt:nth-child(3){
+    top: 50%;
+    z-index: 2;
+    opacity: 0;
+}
+
+.details-txt:nth-child(3).active{
+    opacity: 1;
+}
+
+.details-txt:nth-child(4){
+    top: 75%;
+    z-index: 3;
+    opacity: 0;
+}
+
+.details-txt:nth-child(4).active{
+    opacity: 1;
+}
+
+.details-txt p{
+    font-size: 25px;
+    width: 45%;
+    margin: 0;
+}
+
+/* .details-txt img{
+    height: 50vh;
+    float: right;
+    position: relative;
+    bottom: 180px;
+    right: 150px;
+} */
+
+.shape{
+	position: absolute;
+	/* top:50%;
+	left:50%; */
+    bottom: 60px;
+    right: -60px;
+	transform:translate(-50%,50%);
+	/* background-size:200px 200px; */
+    background-size: cover;
+	border-radius: 80% 20% 32% 68% / 58% 22% 78% 42% ;
+	height:350px;
+	width:350px;
+    background-repeat: round;
+    background-image: url(https://img.freepik.com/free-vector/app-development-illustration_52683-47931.jpg?w=740&t=st=1689596206~exp=1689596806~hmac=63873ff28dde39c72c6a3560e071bbe490e6c2d5975ca249463aca9ad45e0334);
+}
+.icon {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .icon.pushed {
+    filter: grayscale(1);
+    padding-left: 50px;
+  }
+
+  .icon.pushed + .details-txt{
+    z-index: 1;
+    opacity: 1;
+  }
+  
+  .line {
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: green;
+    left: -10px;
+    top: 45px;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out,transform 0.3s ease-in-out;
+  }
+  
+  
+  .icon.pushed + .line {
+    transform: translateX(0);
+  }
+  
+#sec{
+    top: 95px;
+}
+
+#third{
+    top: 165px;
+}
+
+#fourth{
+    top: 215px;
+}
+
+.left-ibar button.active img{
+    filter: grayscale(1);
+}
+
+.left-ibar img{
+    height: 10vh;
+}
+
+
+@keyframes movingline{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
